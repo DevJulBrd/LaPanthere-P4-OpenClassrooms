@@ -91,7 +91,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -133,7 +132,20 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
+}
+
+.client {
+    font-size: 18px;
+    font-style: italic;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client_nom {
+    font-style: normal;
+    font-weight: 300;
 }
 
 .d-bloc .a-btn:hover,
@@ -645,7 +657,6 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
 .btn,
 a {
@@ -736,7 +747,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black;
 }
 
 .portfolio-thumb {
@@ -775,7 +786,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine {
@@ -1039,4 +1050,16 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.tittre {
+    color: #F3976C !important;
+}
+
+.fond {
+    background: black !important;
+}
+
+.black {
+    color: black !important;
 }
