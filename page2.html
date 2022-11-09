@@ -12,11 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<script src="./js/gmaps.js" defer></script>
 
     <title>La Panthère, Agence Web Design</title>
 
@@ -36,7 +36,7 @@
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère" /></a>
+						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère"></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
@@ -83,29 +83,29 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1">
 							<div class="form-group">
-								<label>
+								<label for="nom">
 									Nom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" class="form-control" id="nom" placeholder="BERNARD Julien" required>
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
 								</label>
-								<input id="email" class="form-control" type="email" required />
+								<input id="email" class="form-control" type="email" placeholder="e@mail.com" required>
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="email" placeholder="Bouche à oreille / Famille / Amis..." required id="input_504">
 							</div>
 							<div class="form-group">
-								<label>
-									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+								<label for="message">
+									Brief de votre projet<br>
+								</label><textarea id="message" class="form-control" rows="4" cols="50" placeholder="Ajoutez autant de détails que nécessaire" required></textarea>
 							</div> 
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 								Envoyer
@@ -113,7 +113,7 @@
 						</form>
 					</div>
 					<div class="col-sm-6">
-						<p>
+						<p class="contacts">
 							contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 						</p>
 					</div>
@@ -140,22 +140,22 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md">Twitter</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-facebook icon-md">Facebook</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md">Dribbble</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-instagram icon-md">Instagram</span></a>
 								</div>
 							</div>
 						</div>
